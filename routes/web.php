@@ -35,4 +35,18 @@ Route::get('/all-category',[
     'uses' => '\App\Http\Controllers\CategoryController@index',
     'as'  => 'all-product'
 ]);
+Route::get('/item',[
+    'uses' => '\App\Http\Controllers\ItemController@index',
+    'as'  => 'item'
+]);
 
+Route::get('/student',[
+    'uses' => '\App\Http\Controllers\StudentController@studentInfo',
+    'as'  => 'student'
+]);
+
+
+Route::get('/all-post',[
+    'uses' => '\App\Http\Controllers\PostController@allPost',
+    'as'  => 'all-post'
+]);
